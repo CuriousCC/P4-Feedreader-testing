@@ -14,20 +14,20 @@ $(function () {
      * (b) each feed has a URL defined and the URL is not empty.
      * (c) each feed has a name defined and the name is not empty.
     */
-    describe('RSS Feeds', function () {
-        it('are defined', function () {
+    describe('RSS Feeds', () => {
+        it('are defined', () => {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
 
-        it('each feed has a URL defined and is not empty', function () {
+        it('each feed has a URL defined and is not empty', () => {
             allFeeds.forEach(feed => {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).toBeGreaterThan(0);
             });
         });
 
-        it('each feed has a name defined and is not empty', function () {
+        it('each feed has a name defined and is not empty', () => {
             allFeeds.forEach(feed => {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).toBeGreaterThan(0);
@@ -39,15 +39,15 @@ $(function () {
      * (1) the menu elemen is hidden by default.
      * (2) the menu changes/toggles visibility when the menu icon is clicked.
      */
-    describe('The menu', function () {
+    describe('The menu', () => {
         const menu = document.querySelector('body');
         const icon = document.querySelector('.menu-icon-link');
 
-        it('is hidden by default', function () {
+        it('is hidden by default', () => {
             expect(menu.classList.contains('menu-hidden')).toBe(true);
         });
 
-        it('displays on click and hides when clicked again', function () {
+        it('displays on click and hides when clicked again', () => {
             icon.click();
             expect(menu.classList.contains('menu-hidden')).toBe(false);
             icon.click();
@@ -60,12 +60,12 @@ $(function () {
      * when the loadFeed function is called and completes its work, 
      * there is at least a single .entry element within the .feed container.
      */
-    describe('Initial Entries', function () {
-        beforeEach(function (done) {
+    describe('Initial Entries', () => {
+        beforeEach((done) => {
             loadFeed(0, done);
         });
 
-        it('has at least one entry on load', function (done) {
+        it('has at least one entry on load', (done)=> {
             const entry = document.querySelectorAll('.feed .entry');
             expect(entry.length).toBeGreaterThan(0);
             done();
@@ -76,16 +76,16 @@ $(function () {
      * when a new feed is loaded by the loadFeed function 
      * the content actually changes. 
      */
-    describe('New Feed Selection', function () {
+    describe('New Feed Selection', () => {
         let prevFeed, newFeed;
-        beforeEach(function (done) {
-            loadFeed(0, function () {
+        beforeEach((done) => {
+            loadFeed(0, () => {
                 prevFeed = document.querySelector('.feed').innerHTML;
                 loadFeed(2, done);
             });
         });
 
-        it('changes content', function (done) {
+        it('changes content', (done) => {
             newFeed = document.querySelector('.feed').innerHTML;
             expect(prevFeed).not.toBe(newFeed);
             done();
