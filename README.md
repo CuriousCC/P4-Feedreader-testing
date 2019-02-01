@@ -63,6 +63,5 @@ Whether you work in an organization that uses test-driven development or in an o
 * Download or clone the repository
 * Open index.html file in your browser
 
-2. You can preview the ready project with complete test suites on  its [github page](ownload or clone the repository
-open index.html file in your browser)
+2. You can preview the ready project with complete test suites on  its [github page](https://curiouscc.github.io/P4-Feedreader-testing)
 * The test results will appear on the bottom of the page, below the Feed Reader.
