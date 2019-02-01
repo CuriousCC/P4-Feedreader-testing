@@ -1,30 +1,12 @@
-# Project Overview
+# Feed Reader Testing (using Jasmine)
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
-
-
-## Why this Project?
-
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development." This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
-
-Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
-
-
-## What will I learn?
-
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
-
-## How will this help my career?
-
-Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-
-Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
+## About
+* This is my initial submission for Project #4 for the Udacity Front-End Web Developer Nanodegree. 
+* The starter code provided by Udacity to all students can be accessed [here](https://github.com/udacity/frontend-nanodegree-feedreader).
+* This project demonstrates browrser-based testing using [Jasmine]((http://jasmine.github.io/).
+* Students were given a web-based application that reads RSS feeds  an incomplete test suite, and were asked to use Jasmine to write a number of tests suites, following the development strategy described bellow. 
 
 # Development Strategy
-
-For a refresher (or reference) before you begin writing code, we recommend reviewing the content from [JavaScript Testing](https://www.udacity.com/course/javascript-testing--ud549). Your project will be evaluated by a Udacity code reviewer according to the [Feed Reader Testing project rubric](https://review.udacity.com/#!/rubrics/18/view). Please review for detailed project requirements.
 
 1. Familiarize yourself with the starter code
     * Open up `index.html` and review the functionality of the application within your browser
@@ -69,6 +51,18 @@ Additionally, note that:
 
 When you're all finished, write a `README` file detailing all steps required to successfully run the application. If you have added additional tests, provide documentation for what these future features are and what the tests are checking for.
 
-# Contributing
+## Why this Project?
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development." This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
+
+Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
+
+## How to run
+
+1. If you want to run the Application locally (on your machine):
+* Download or clone the repository
+* Open index.html file in your browser
+
+2. You can preview the ready project with complete test suites on  its [github page](ownload or clone the repository
+open index.html file in your browser)
+* The test results will appear on the bottom of the page, below the Feed Reader.
