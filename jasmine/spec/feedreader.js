@@ -23,13 +23,14 @@ $(function () {
         it('each feed has a URL defined and is not empty', function () {
             allFeeds.forEach(feed => {
                 expect(feed.url).toBeDefined();
+                expect(feed.url.length).toBeGreaterThan(0);
             });
         });
 
         it('each feed has a name defined and is not empty', function () {
             allFeeds.forEach(feed => {
                 expect(feed.name).toBeDefined();
-                expect(feed.name.length).toBeGreaterThan(2);
+                expect(feed.name.length).toBeGreaterThan(0);
             });
         });
     });
