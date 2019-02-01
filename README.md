@@ -3,7 +3,7 @@
 ## About
 * This is my initial submission for Project #4 for the Udacity Front-End Web Developer Nanodegree. 
 * The starter code provided by Udacity to all students can be accessed [here](https://github.com/udacity/frontend-nanodegree-feedreader).
-* This project demonstrates browrser-based testing using [Jasmine]((http://jasmine.github.io/).
+* This project demonstrates browrser-based testing using [Jasmine](http://jasmine.github.io/).
 * Students were given a web-based application that reads RSS feeds  an incomplete test suite, and were asked to use Jasmine to write a number of tests suites, following the development strategy described bellow. 
 
 # Development Strategy
