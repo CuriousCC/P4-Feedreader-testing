@@ -66,7 +66,7 @@ $(function () {
         });
 
         it('has at least one entry on load', function (done) {
-            const entry = document.querySelectorAll('.entry');
+            const entry = document.querySelectorAll('.feed .entry');
             expect(entry.length).toBeGreaterThan(0);
             done();
         });
